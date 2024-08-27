@@ -121,7 +121,7 @@ export const info = {
         },
         {
             title: "Accountability Project: Coming Soon",
-            live: "https://silasgebhart.com",
+            live: "#",
             source: "https://github.com/s-gebby"
         }
     ]
