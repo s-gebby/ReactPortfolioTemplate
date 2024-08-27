@@ -47,10 +47,24 @@ export default function BaseLayout() {
                {singlePage ? <SinglePageRoutes refs={{refHome, refAbout, refPortfolio}}/> : <MultiPageRoutes />}
             </Grid>
             <Grid item>
-               <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
-                  py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
-                  <p>template created with &hearts; by <a href={'https://paytonpierce.dev'}>Payton Pierce</a></p>
-                  <p>&copy; 2023</p>
+               <Box
+                  component={'footer'}
+                  display={'flex'}
+                  flexDirection={'column'}
+                  alignItems={'center'}
+                  py={'0.5rem'}
+                  sx={{
+                    opacity: 0,
+                    fontSize: '0.7rem',
+                    transition: 'opacity 0.3s ease',
+                    '&:hover': {
+                      opacity: 0.7,
+                    }
+                  }}
+                  width={'100%'}
+               >
+                  <p>template created by <a href={'https://paytonpierce.dev'}>Payton Pierce</a> & edited by <a href={'https://github.com/s-gebby/ReactPortfolioTemplate'}> Silas Gebhart</a></p>
+                  <p>© 2024</p>
                </Box>
             </Grid>
          </Grid>
