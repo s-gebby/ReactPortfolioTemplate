@@ -57,4 +57,6 @@ export default function About({innerRef}) {
             <Terminal text={miscText()}/>
         </Box>
     )
+
+    
 }
