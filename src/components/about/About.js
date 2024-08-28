@@ -3,6 +3,7 @@ import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
+import selfie from '../../img/selfie.png';
 
 
 export default function About({innerRef}) {
@@ -51,10 +52,11 @@ export default function About({innerRef}) {
     }
 
     return (
-        <Box ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'} id={'about'}>
+        <Box ref={innerRef} display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'8rem'} id={'about'}>
             <Terminal text={aboutMeText()}/>
             <Terminal text={skillsText()}/>
             <Terminal text={miscText()}/>
+            <img src={selfie} alt="Self Portrait" style={{width: '500px', height: '500px', borderRadius: '50%', marginBottom: '1rem'}} />
         </Box>
     )
 
